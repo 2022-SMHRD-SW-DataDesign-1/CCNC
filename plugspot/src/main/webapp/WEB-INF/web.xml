@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>com.plugspot.db.config</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>JoinService</servlet-name>
+  	<display-name>JoinService</display-name>
+  	<description></description>
+  	<servlet-class>plugspot.controller.JoinService</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>config</servlet-name>
   	<url-pattern>/config</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>JoinService</servlet-name>
+  	<url-pattern>/JoinService</url-pattern>
   </servlet-mapping>
 </web-app>
