@@ -4,24 +4,37 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-  <servlet>
-  	<servlet-name>config</servlet-name>
-  	<display-name>config</display-name>
-  	<description></description>
-  	<servlet-class>com.plugspot.db.config</servlet-class>
-  </servlet>
+
+
   <servlet>
   	<servlet-name>JoinService</servlet-name>
   	<display-name>JoinService</display-name>
   	<description></description>
   	<servlet-class>plugspot.controller.JoinService</servlet-class>
   </servlet>
-  <servlet-mapping>
-  	<servlet-name>config</servlet-name>
-  	<url-pattern>/config</url-pattern>
-  </servlet-mapping>
+  <servlet>
+  	<servlet-name>numCheck</servlet-name>
+  	<display-name>numCheck</display-name>
+  	<description></description>
+  	<servlet-class>plugspot.controller.numCheck</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<display-name>Login</display-name>
+  	<description></description>
+  	<servlet-class>plugspot.controller.Login</servlet-class>
+  </servlet>
+
   <servlet-mapping>
   	<servlet-name>JoinService</servlet-name>
   	<url-pattern>/JoinService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>numCheck</servlet-name>
+  	<url-pattern>/numCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/Login</url-pattern>
   </servlet-mapping>
 </web-app>

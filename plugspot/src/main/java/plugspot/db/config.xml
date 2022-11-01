@@ -3,5 +3,11 @@
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-<properties resource = "plugspot.db/db.properties"/>
+<properties resource = "plugspot/db/db.properties"/>
+ <typeAliases>
+             <typeAlias type = "plugspot.model.MemberDTO" alias="MemberDTO"/>
+             </typeAliases>
+  <mappers>
+    <mapper resource="plugspot/mapper/MemberMapper.xml"/>
+  </mappers>
 </configuration>
